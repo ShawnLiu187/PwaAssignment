@@ -24,7 +24,7 @@ workbox.precaching.precacheAndRoute([
 ]);
 
 workbox.routing.registerRoute(
-    new RegExp('http://api.openweathermap.org'),
+    new RegExp('https://api.openweathermap.org'),
     workbox.strategies.cacheFirst()
   );
 
